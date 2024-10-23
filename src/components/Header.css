@@ -1,0 +1,93 @@
+/* Header.css */
+
+.navbar {
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Padding around the content */
+    background-color: #007bff; /* Navbar background color */
+    color: white; /* Text color */
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navbar h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap */
+}
+
+.navbar-link {
+    margin-right: 15px; /* Space between links */
+}
+
+.navbar-btn {
+    
+    color: aliceblue; /* Button text color */
+    background-color: orange; /* Button background color */
+    padding: 10px 15px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.navbar-btn:hover {
+    background-color: darkorange; /* Darken button on hover */
+}
+
+.navbar-link a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-link a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.navbar-menu-toggle {
+    display: none; /* Hide by default, show on mobile */
+}
+
+/* Side Navbar Styles */
+.side-navbar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #fff; /* Background color of side navbar */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: right 0.3s ease; /* Smooth transition for opening/closing */
+}
+
+.side-navbar.show {
+    right: 0; /* Show when active */
+}
+
+.side-navbar-links {
+    padding: 20px;
+}
+
+.side-navbar-links .navbar-link {
+    margin-bottom: 15px; /* Space between links in side navbar */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-menu-toggle {
+        display: block; /* Show menu toggle on mobile */
+        cursor: pointer; /* Change cursor on hover */
+        color: white; /* Color of icon */
+        font-size: 24px; /* Size of icon */
+    }
+    
+    .navbar-links {
+        display: none; /* Hide links on mobile, use side navbar instead */
+    }
+}

@@ -1,0 +1,77 @@
+/* Account.css */
+
+/* Main container for the account page */
+.account-container {
+    max-width: 800px; /* Limit the width of the container */
+    padding: 20px; /* Padding inside the container */
+    margin: 100px auto 0; /* Center the container with top margin */
+}
+
+/* Link to My Account */
+.my-account-link {
+    cursor: pointer; /* Change cursor on hover */
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: underline; /* Underline to indicate it's clickable */
+}
+
+/* Add button styling */
+.btn-add {
+    margin-bottom: 20px; /* Space below the button */
+    margin-top: 50px; /* Space above the button */
+    color: white; /* Text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Alert message styling */
+.alert {
+    margin-bottom: 20px; /* Space below alert messages */
+}
+
+/* Container for email cards */
+.email-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    gap: 15px; /* Space between cards */
+}
+
+/* Individual email card styling */
+.email-card {
+    background-color: #f9f9f9; /* Light background color for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1 1 calc(33% - 15px); /* Responsive card width with space consideration */
+    min-width: 250px; /* Minimum width for cards */
+}
+
+/* Paragraph styling within email cards */
+.email-card p {
+    margin: 5px 0; /* Space between paragraphs in cards */
+}
+
+/* Button group styling for alignment and spacing */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly within the group */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .email-card {
+        flex: 1 1 calc(50% - 15px); /* Adjust card width for smaller screens (2 per row) */
+    }
+}
+
+@media (max-width: 480px) {
+    .email-card {
+        flex: 1 1 calc(100% - 15px); /* Full width on very small screens (1 per row) */
+    }
+
+    .btn-add {
+        margin-top: 30px; /* Adjust top margin on smaller screens if needed */
+        margin-bottom: 10px; /* Adjust bottom margin on smaller screens if needed */
+    }
+}
