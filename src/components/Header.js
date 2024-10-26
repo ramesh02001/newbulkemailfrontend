@@ -22,18 +22,19 @@ function Header() {
     return (
         <div>
             <nav className='navbar'>
-                <h1>BulkEmail</h1>
+                <h1>Forgotpassword</h1>
+        //<h1>BulkEmail</h1>
                 <div className='navbar-links'>
                     {/* <p className='navbar-link'><Link to='/'>Home</Link></p> */}
                     {/* <p className='navbar-link'><Link to='/collections'>Collections</Link></p> */}
                     {/* <p className='navbar-link'><Link to='/contact'>Contacts</Link></p> */}
                     <p className='navbar-link'><Link exact to='/login'>Login</Link></p>
                     {/* <p className='navbar-link'><Link to='/signup'>Sign Up</Link></p> */}
-                    <p className='navbar-link'><Link to='/account'>My Account</Link></p>
-                    {/* <p className='navbar-link'><Link to='/adduser'>Add User</Link></p>
-                    <p className='navbar-link'><Link to='/edit/:id'>Edit</Link></p>
+                    // <p className='navbar-link'><Link to='/account'>My Account</Link></p>
+                    //<p className='navbar-link'><Link to='/adduser'>Add User</Link></p>
+                    // <p className='navbar-link'><Link to='/edit/:id'>Edit</Link></p>
                     <p className='navbar-link'><Link to='/forgot-password'>Forgot Password</Link></p>
-                    <p className='navbar-link'><Link to='/reset-password/:token'>Reset Password</Link></p> */}
+                    <p className='navbar-link'><Link to='/reset-password/:token'>Reset Password</Link></p> 
                     <p className='navbar-link'>  <Link onClick={handleLogout} className='navbar-btn btn-logout'>Logout</Link></p>
                 </div>
                 <div onClick={showNavbar} className='navbar-menu-toggle'>
