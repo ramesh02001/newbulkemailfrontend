@@ -141,7 +141,7 @@ const Signup = () => {
 
                 <button type="submit" className="btn btn-primary">Sign Up</button>
                 <p className="signup-footer">
-                    Already have an account? <a href="/login">Log in here</a>
+                    Already have an account?<p className="blue-underline"> Log in here</p>
                 </p>
             </form>
         </div>
