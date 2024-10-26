@@ -45,3 +45,13 @@ h2 {
     text-align: center;
     margin-top: 15px;
 }
+.blue-underline {
+    text-decoration: underline;
+    color: blue;
+    position: relative; /* Required for icon positioning */
+}
+
+.blue-underline:hover {
+    color: darkblue;
+    cursor: pointer; /* Change color when hovering */
+}
