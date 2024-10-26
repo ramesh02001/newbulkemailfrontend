@@ -30,6 +30,29 @@ h2 {
     border-radius: 5px; /* Rounded corners for input field */
     border: 1px solid #ccc; /* Light gray border for input field */
 }
+.blue-underline {
+    text-decoration: underline;
+    color: blue;
+    position: relative; /* Required for icon positioning */
+}
+
+.blue-underline:hover {
+    color: darkblue;
+    cursor: pointer; /* Change color when hovering */
+}
+
+.blue-underline::after {
+    content: "👋🏻"; /* This is the icon that will appear */
+    position: absolute;
+    right: -20px; /* Adjust the position of the icon */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.blue-underline:hover::after {
+    opacity: 1; /* Show icon on hover */
+}
+
 
 .btn {
     width: 100%; /* Full width button */
