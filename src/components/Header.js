@@ -22,8 +22,8 @@ function Header() {
     return (
         <div>
             <nav className='navbar'>
-                <h1>Forgotpassword</h1>
-    {/*<h1>BulkEmail</h1>*/}
+        {/* <h1>Forgotpassword</h1>*/}
+             <h1>BulkEmail</h1>
                 <div className='navbar-links'>
                     {/* <p className='navbar-link'><Link to='/'>Home</Link></p> */}
                     {/* <p className='navbar-link'><Link to='/collections'>Collections</Link></p> */}
