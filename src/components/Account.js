@@ -165,7 +165,7 @@ const Account = ({ Usernotes, setUsernotes }) => {
                 <div className="email-cards">
                     {Usernotes.map((data) => (
                         <div key={data._id} className="email-card"> {/* Use a unique key */}
-                            <p><strong>Recipient:</strong> {data.recipient}</p>
+                           {/* <p><strong>Recipient:</strong> {data.recipient}</p>*/}
                             <p><strong>Subject:</strong> {data.subject}</p>
                             <p><strong>Message:</strong> {data.message}</p>
                             <p><strong>Posted by:</strong> {data.user.username}</p>
