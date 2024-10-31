@@ -32,7 +32,7 @@ function Header() {
                     <p className='navbar-link'><Link to='/signup'>Sign Up</Link></p>
                      <p className='navbar-link'><Link to='/account'>My Account</Link></p>
                     {/* <p className='navbar-link'><Link to='/adduser'>Add User</Link></p>
-                    {/*<p className='navbar-link'><Link to='/edit/:id'>Edit</Link></p>*/}
+                    <p className='navbar-link'><Link to='/edit/:id'>Edit</Link></p>*/}
                     {/* <p className='navbar-link'><Link to='/forgot-password'>Forgot Password</Link></p>
                      <p className='navbar-link'><Link to='/reset-password/:token'>Reset Password</Link></p> */}
                     <p className='navbar-link'>  <Link onClick={handleLogout} className='navbar-btn btn-logout'>Logout</Link></p>
